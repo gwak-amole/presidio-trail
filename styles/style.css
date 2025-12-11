@@ -66,6 +66,7 @@ nav a:hover {
 
 .hero {
     z-index: 3;
+    height: 250px;
     border: none;
     padding: 10rem 2rem 6rem;
     text-align: center;
