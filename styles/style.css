@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --forest-green: #2F4730;
     --pine-dark: #1E2E23;
@@ -30,22 +36,25 @@ body h2 {
 }
 
 header {
-    background: rgba(217, 204, 192, 0.402);
+    background: rgba(192, 200, 217, 0.402);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     padding: 20px;
-    box-shadow: 0 2px 5px var(--earth-brown);
+    box-shadow: 0 2px 5px var(--pine-dark);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: absolute;
     z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 nav a {
     margin-right: 20px;
     text-decoration: none;
-    color: var(--earth-brown);
+    color: var(--pine-dark);
     font-weight: 300;
     transition: color 0.3s ease;
     font-size: 1.5rem;
@@ -53,7 +62,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--clay-light);
+    color: var(--forest-green);
 }
 
 .logo {
@@ -67,8 +76,11 @@ nav a:hover {
 .site-header-container {
     position: relative;
     overflow: hidden;
-    height: 700px;
-
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
 }
 
 .hero {
@@ -101,10 +113,9 @@ nav a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
-    max-width: 1200px;
     padding: 2rem 1rem;
     background: var(--sand);
-    margin: 0 auto;  
+    margin: 0;  
 }
 
 .footer-div {
@@ -149,3 +160,22 @@ nav a:hover {
     border-radius: 0 0 12px 12px;
     margin-top: -12px;
 }
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+    gap: 2rem;
+
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.steps-div {
+    background-color: var(--cloud-white);
+    border: 0.5px solid var(--earth-brown);
+    box-shadow: 0 0 5px 2px rgba(144, 122, 103, 0.494);
+    padding: 3rem 2rem;
+    border-radius: 36px;
+}
+    
