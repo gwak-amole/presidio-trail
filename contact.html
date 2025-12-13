@@ -11,6 +11,9 @@
     </head>
     <body>
         <div class="site-header-container">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="media/presidiotrailhero.mp4" type="video/mp4">
+            </video>
             <header>
                 <a href="index.html"><img class="logo" src="" alt="presidio-trails-logo"></a>
                 <nav>
@@ -23,6 +26,23 @@
             <p class="hero-subtitle">Have a plot of land in mind?</p>
         </section>
         </div>
+        <section class="contact-form">
+            <h2>Contact Form</h2>
+            <p>Don't hesitate to reach out if you have a plot of land you would like to sell.</p>
+            
+            <form method="POST" action="https://script.google.com/macros/s/AKfycby6R8tWln5ORQdWTSjV95IT5Zv3abPBk7Xgd7QlhTlQtxT_gB7UG9LQiXbyjnJrN5lamg/exec">
+                <label for="Name">Name:</label><br>
+                <input type="text" id="Name" name="Name" required><br><br>
+
+                <label for="Email">Email:</label><br>
+                <input type="email" id="Email" name="Email" required><br><br>
+
+                <label for="Message">Details:</label><br>
+                <textarea id="Message" name="Message" rows="4" required></textarea><br>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
         <section class="footer">
             <div class="footer-div">
                 <h2>Contact</h2>
