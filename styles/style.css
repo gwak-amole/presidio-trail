@@ -166,6 +166,7 @@ nav a:hover {
     grid-template-columns: repeat(3, 1fr);
     max-width: 900px;
     gap: 2rem;
+    padding: 3rem 0;
 
     margin: 3rem auto;
     text-align: center;
@@ -177,8 +178,36 @@ nav a:hover {
     box-shadow: 0 0 5px 2px rgba(144, 122, 103, 0.494);
     padding: 3rem 2rem;
     border-radius: 36px;
+    transition: transform 0.3s ease;
+}
+
+.steps-div:hover {
+    transform: translateY(-5px);
 }
     
 .contact-form {
     padding: 2rem 2rem;
+}
+
+.contactus {
+    display: block;
+    color: var(--clay-light);
+    padding: 0.1rem 0;
+    transition: color 0.5s ease;
+}
+
+.contactus:hover {
+    color: var(--earth-brown);
+}
+
+.big-text {
+    background-color: var(--earth-brown);
+    color: var(--text-light);
+    font-family: "Cormorant Garamond", serif;
+    padding: 8rem 1rem;
+    text-align: center;
+}
+
+.big-text h1 {
+    font-size: 2.5rem;
 }
