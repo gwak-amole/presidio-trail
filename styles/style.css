@@ -166,8 +166,8 @@ nav a:hover {
     grid-template-columns: repeat(3, 1fr);
     max-width: 900px;
     gap: 2rem;
-    padding: 3rem 0;
-
+    padding: 1.5rem 0;
+    padding-top: 0;
     margin: 3rem auto;
     text-align: center;
 }
@@ -201,13 +201,34 @@ nav a:hover {
 }
 
 .big-text {
-    background-color: var(--earth-brown);
-    color: var(--text-light);
+    background: linear-gradient(135deg, var(--sky-blue) 0%, var(--moss-light) 100%);
+    color: var(--cloud-white);
     font-family: "Cormorant Garamond", serif;
-    padding: 8rem 1rem;
+    padding: 8rem 2rem;
     text-align: center;
+    position: relative;
+    margin-bottom: 3rem;
 }
 
 .big-text h1 {
-    font-size: 2.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.4;
+    text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .big-text h1 {
+        font-size: 2rem;
+    }
+}
+
+.expl {
+    padding:4rem 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    background-image: linear-gradient(var(--earth-brown) 0%, var(--sand) 250%);
+    color: var(--text-light);
 }
